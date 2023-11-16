@@ -1,18 +1,24 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div class="container mt-5">
+      <h1 class="display-4">Welcome to My Awesome Vue.js App</h1>
+      <p class="lead">
+        This is a simple homepage for your Vue.js application. Customize it to
+        suit your needs!
+      </p>
+      <router-link to="/users" class="btn btn-primary"
+        >Explore Users</router-link
+      >
+    </div>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
 export default {
-  name: 'HomeView',
-  components: {
-    HelloWorld
-  }
-}
+  name: "HomeView",
+};
 </script>
+
+<style scoped>
+/* Add your component-specific styles here if needed */
+</style>
